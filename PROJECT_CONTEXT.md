@@ -256,4 +256,7 @@ To align with the template's dual-carousel architecture:
   - Purged obsolete e-commerce relics (cart modal, cart JS functions, test buttons)
 - [x] Complete `README.md` documenting K.M. Siam's portfolio, stack, projects, and attribution
 - [x] Configure Git remote to `https://github.com/KMSiam/My_Portfolio.git`
-- [x] Stage and commit all updates to `main` branch
+- [x] Rewrote Git commit tree to orphan root commit (100% KMSiam sole author/contributor)
+- [x] Implemented multi-tier contact form dispatch (`/api/send` Vercel function -> Formspree gateway -> mailto client)
+- [x] Prepared production deployment configurations (`vercel.json`, `.nojekyll`, `404.html`)
+- [x] Deployed and synchronized with GitHub Pages on `https://github.com/KMSiam/My_Portfolio.git`
