@@ -57,7 +57,7 @@ export const DEFAULT_ITEMS = [
     title: 'FlyRank ML Engine',
     subtitle: 'Enterprise Search Decay Prediction',
     description: 'Machine learning internship capstone at FlyRank evaluating 30,000 URLs across 79 million search telemetry facts. Replaced static staleness heuristics with an interpretable HistGBDT model achieving 90% Precision@10 without cross-client leakage.',
-    stats: 'Precision@10: 90.0% (+60 pp) • GroupShuffleSplit Evaluation • Verified Credential FL-GAIF-2026-0603',
+    stats: 'Precision@10: 90.0% (+60 pp) • GroupShuffleSplit Evaluation • HistGBDT Architecture',
     deliverables: [
       'HistGBDT Model Outperforming Static Heuristics (+70 pp @20)',
       'Zero-Leakage GroupShuffleSplit across 10 Enterprise Clients',

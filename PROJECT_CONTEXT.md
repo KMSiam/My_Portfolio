@@ -251,7 +251,7 @@ To align with the template's dual-carousel architecture:
   - About section metrics, SEU CSE credentials, and bio
   - Experience horizontal timeline milestones (2020-2026)
   - Services bento & accordion (Machine Learning, Full-Stack, Mobile/UI)
-  - Footer with "LET'S TALK", email pill, socials, FlyRank verification badge (`FL-GAIF-2026-0603`)
+  - Footer with "LET'S TALK", email pill, socials, and clean credits bar (removed verification badge)
   - Updated contact modal form with service dropdown options and mailto handler
   - Purged obsolete e-commerce relics (cart modal, cart JS functions, test buttons)
 - [x] Complete `README.md` documenting K.M. Siam's portfolio, stack, projects, and attribution

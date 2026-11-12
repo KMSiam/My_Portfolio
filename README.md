@@ -5,7 +5,6 @@
   [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v3-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
   [![OGL WebGL](https://img.shields.io/badge/Graphics-OGL_WebGL-black?style=for-the-badge&logo=webgl&logoColor=white)](https://github.com/oframe/ogl)
   [![JavaScript](https://img.shields.io/badge/ES_Modules-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-  [![FlyRank Verified](https://img.shields.io/badge/FlyRank_AI-Verified_Credential-051F21?style=for-the-badge&logo=shield&logoColor=54E399)](https://internship.flyrank.ai/verify?id=FL-GAIF-2026-0603)
   [![License](https://img.shields.io/badge/License-MIT-000000?style=for-the-badge)](LICENSE)
 
   <p align="center">
@@ -60,7 +59,6 @@ The website is engineered with a monochrome editorial aesthetic that blends brut
 ### 4. 🚀 FlyRank AI ML Engine & Capstone
 - **Category**: Supervised Machine Learning & Applied AI Internship
 - **Stack**: Python, Scikit-learn, Hugging Face, Matplotlib, FastAPI
-- **Credential**: Verified Graduate ID `FL-GAIF-2026-0603` ([Verify Online](https://internship.flyrank.ai/verify?id=FL-GAIF-2026-0603))
 - **Highlights**: Engineered model evaluation matrices, prompt sensitivity benchmarks, and precision-recall tradeoff curves yielding a +14.2% precision gain over standard baseline models.
 
 ### 5. 🏡 HomZen Housing & Real Estate Ecosystem
@@ -113,7 +111,6 @@ Open `http://localhost:8080` in any modern web browser.
 - **Name**: K.M. Siam
 - **Institution**: Southeast University, Dhaka, Bangladesh (Dept. of CSE, ID: `2023100000603`)
 - **Email**: [kmsiam2019@gmail.com](mailto:kmsiam2019@gmail.com)
-- **FlyRank Verified Credential**: [`FL-GAIF-2026-0603`](https://internship.flyrank.ai/verify?id=FL-GAIF-2026-0603)
 - **GitHub**: [github.com/KMSiam](https://github.com/KMSiam)
 - **LinkedIn**: [linkedin.com/in/km-siam-973723291](https://www.linkedin.com/in/km-siam-973723291/)
 - **X (Twitter)**: [x.com/KMSiam15](https://x.com/KMSiam15)

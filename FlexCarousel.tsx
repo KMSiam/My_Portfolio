@@ -168,10 +168,10 @@ export const DEFAULT_ITEMS: FlexCarouselItem[] = [
     title: 'FLYRANK AI ML ENGINE',
     subtitle: 'Supervised ML Benchmarks & Search Decay Triage',
     description: 'Engineered supervised machine learning pipelines, prompt engineering benchmarks, and automated evaluation metrics during the FlyRank AI Internship.',
-    stats: '+14.2% Precision Gain over Baseline (Credential: FL-GAIF-2026-0603)',
-    deliverables: ['Production Classification Benchmark Suite', 'RAG Retrieval Pipeline Evaluation', 'Precision-Recall Tradeoff Optimization', 'Industry Verified Credential FL-GAIF-2026-0603'],
+    stats: '+14.2% Precision Gain over Baseline (HistGBDT Model Architecture)',
+    deliverables: ['Production Classification Benchmark Suite', 'RAG Retrieval Pipeline Evaluation', 'Precision-Recall Tradeoff Optimization', 'Feature Engineering & Baseline Comparison'],
     tools: ['Python', 'Scikit-learn', 'Hugging Face', 'Matplotlib', 'FastAPI'],
-    link: 'https://internship.flyrank.ai/verify?id=FL-GAIF-2026-0603'
+    link: 'https://kmsiam.github.io/Flyrank-Internship-ML/'
   },
   {
     src: 'Project Images/HomZen.png',
