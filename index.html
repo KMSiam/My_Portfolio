@@ -1160,18 +1160,65 @@
       }
     });
 
-    function submitContactForm(e) {
+    async function submitContactForm(e) {
       e.preventDefault();
+      const submitBtn = e.target.querySelector('button[type="submit"]');
+      const origText = submitBtn ? submitBtn.innerText : 'SEND MESSAGE';
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerText = 'SENDING...';
+      }
+
       const name = document.getElementById('contact-name').value;
       const email = document.getElementById('contact-email').value;
       const service = document.getElementById('contact-service').value;
       const message = document.getElementById('contact-message').value;
-      closeContactModal();
-      showToast(`Thank you, ${name}! Opening mail client...`);
-      const subject = encodeURIComponent(`Portfolio Inquiry: ${service} — ${name}`);
-      const body = encodeURIComponent(`Hi K.M. Siam,\n\nMy name is ${name} (${email}).\nI am contacting you regarding: ${service}.\n\nMessage:\n${message}\n\nBest regards,\n${name}`);
-      window.location.href = `mailto:kmsiam2019@gmail.com?subject=${subject}&body=${body}`;
-      document.getElementById('contact-form').reset();
+
+      try {
+        let sent = false;
+        // 1. Try Vercel Serverless /api/send
+        try {
+          const res = await fetch('/api/send', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, email, subject: service, message })
+          });
+          if (res.ok) sent = true;
+        } catch (_) {}
+
+        // 2. Direct fallback to verified Formspree endpoint
+        if (!sent) {
+          try {
+            const fsRes = await fetch('https://formspree.io/f/xovkboye', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+              body: JSON.stringify({ name, email, subject: service, message })
+            });
+            if (fsRes.ok) sent = true;
+          } catch (_) {}
+        }
+
+        closeContactModal();
+        if (sent) {
+          showToast(`Thank you, ${name}! Your inquiry has been sent directly to K.M. Siam.`);
+          document.getElementById('contact-form').reset();
+        } else {
+          showToast(`Opening your email client to send directly...`);
+          const subject = encodeURIComponent(`Portfolio Inquiry: ${service} — ${name}`);
+          const body = encodeURIComponent(`Hi K.M. Siam,\n\nMy name is ${name} (${email}).\nI am contacting you regarding: ${service}.\n\nMessage:\n${message}\n\nBest regards,\n${name}`);
+          window.location.href = `mailto:kmsiam2019@gmail.com?subject=${subject}&body=${body}`;
+          document.getElementById('contact-form').reset();
+        }
+      } catch (err) {
+        closeContactModal();
+        showToast('Drafting inquiry in email client...');
+        window.location.href = `mailto:kmsiam2019@gmail.com?subject=Portfolio Inquiry&body=${encodeURIComponent(message)}`;
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerText = origText;
+        }
+      }
     }
 
     function copyContactEmail() {
