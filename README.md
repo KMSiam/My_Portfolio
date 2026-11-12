@@ -79,6 +79,7 @@ The website is engineered with a monochrome editorial aesthetic that blends brut
 | :--- | :--- | :--- |
 | **OGL Liquid Carousel** | `flex-carousel.js` | Hardware-accelerated liquid lens bending shader with inertia drag, touch tracking, and dynamic item cards. |
 | **WorksWheel 3D Drum Reel** | `works-wheel.js` | 3D cylindrical drum projection with circular scroll physics, keyboard navigation, and interactive project triggers. |
+| **Particle Constellation Canvas** | `particles.js` | Interactive mouse-repelling particle network with distance-based dynamic constellation lines. |
 | **ScrollExpandMedia** | `scroll-expand-media.js` | Dual-layer GPU-accelerated expansion canvas that interpolates size, blur filters, and title typography on scroll. |
 | **Experience Canvas** | `experience-section.js` | Sticky horizontal progression transforming vertical scrolling into spatial career milestones. |
 

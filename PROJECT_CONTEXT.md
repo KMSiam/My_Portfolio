@@ -22,7 +22,8 @@ E:\VS Code\Web\MY_Portfolio\
 │   ├── works-wheel.js           # 3D Cylindrical drum reel component (exports initWorksWheel, DEFAULT_WORKS)
 │   ├── scroll-expand-media.js   # Scroll-driven kinetic media expansion engine (exports initScrollExpandMedia)
 │   ├── ScrollExpandMedia.tsx    # TypeScript / React source reference for ScrollExpandMedia
-│   └── experience-section.js    # Horizontal spatial timeline engine powered by StringTune runtime
+│   ├── experience-section.js    # Horizontal spatial timeline engine powered by StringTune runtime
+│   └── particles.js             # Interactive particle constellation background engine from kmsiam.vercel.app
 │
 ├── Assets & Media Directories:
 │   ├── assets/                  # Hero headshots, background ambient textures, StringTune bundles
